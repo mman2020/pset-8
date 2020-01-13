@@ -1,6 +1,10 @@
 
 public class Exercises {
-
+	/*
+	 * Exercise 1
+	 * Given two arrays of ints, a and b, return true if the arrays have either the same first element or the same last element.
+	 * The arrays must meed the following specifications, otherwise you should return false.
+   */
 	public boolean commonEnd(int[] a, int[] b) {
 		if (a == null || a.length == 0 || b == null || b.length == 0) {
 			return false;
@@ -15,7 +19,11 @@ public class Exercises {
 		}
 	}
 
-		// write your code here
+	/*
+	 * Exercise 2
+	 * Given an array of Strings, values, return a new array comprised of the first and last n elements of the original array.
+	 * The input array must meet the following specifications, otherwise you should return an empty array.
+	 */
 
 	public String[] endsMeet(String[] values, int n) {
 		String[] empty = new String[0];
@@ -33,6 +41,12 @@ public class Exercises {
 		}
 		return a;
 	}
+
+	/*
+   * Exercise 3
+   * Given an array of ints, numbers, return the difference between the largest and smallest values.
+	 * The input array must meet the following specifications, otherwise you should return undefined.
+   */
 
 	public int difference(int[] numbers) {
 		if(numbers == null) {
