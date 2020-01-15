@@ -89,7 +89,7 @@ public class Exercises {
  	 * Given an array of Strings, words, return a new array comprised of the middle three elements of the original array.
  	 * The input array must meet the following specifications, otherwise you should return an empty array.
 	 */
-	 
+
 	 public String[] middle(String[] words) {
 	 	String[] empty = new String[0];
 	 		for(int i = 0; i < words.length; i ++) {
@@ -104,7 +104,16 @@ public class Exercises {
 	 		} else if (words.length < 3 || words.length % 2 == 0) {
 		 		return empty;
 	 }
-
+	 	String first = words[(int) Math.floor(words.length / 2) - 1];
+	 	String middle = words[(int) Math.floor(words.length / 2)];
+	 	String last = words[(int) Math.floor(words.length / 2) + 1];
+	 	String[] returnArray = new String[3];
+	 	returnArray[0] = first;
+	 	returnArray[0] = middle;
+	 	returnArray[0] = last;
+	 	return returnArray;
+ }
+ 
   /*
 	 * Exercise 6
  	 * Given an array of ints, numbers, return true if there exists three consecutively increasing numbers somewhere in the array.
