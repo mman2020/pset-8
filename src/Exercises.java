@@ -54,19 +54,35 @@ public class Exercises {
 		} else if(numbers.length < 1) {
 			return 1/0;
 		}
-		int maximum = numbers[0];
+		int max = numbers[0];
 		int mininum = numbers[0];
 		for(int i = 0; i < numbers.length; i++) {
-			maximum = (numbers[i] > maximum) ? numbers[i] : maximum;
+			max = (numbers[i] > max) ? numbers[i] : max;
 			mininum = (numbers[i] < mininum) ? numbers[i] : mininum;
 		}
-		return maximum - mininum;
+		return max - mininum;
 	}
+
   /*
 	 * Exercise 4
 	 * Given an array of doubles, numbers, return the largest value among the first, middle, and last elements in the array.
 	 * The input array must meet the following specifications, otherwise you should return undefined.
 	 */
+
+	 public double biggest(double[] numbers) {
+	 	if(numbers == null) {
+		 	return 1/0;
+	 	} else if (numbers.length < 3 || numbers.length % 2 == 0) {
+		 	return 1/0;
+	 	}
+	 	double first = numbers[0];
+	 	double middle = numbers[(int) Math.floor(numbers.length / 2)];
+	 	double last = numbers[numbers.length - 1];
+	 	double max = (first > middle && first > last) ? first :
+	 	(middle > last) ? middle :
+	 	last;
+	 	return max;
+ }
 
   /*
 	 * Exercise 5
@@ -98,4 +114,11 @@ public class Exercises {
 	 	* Given an array of ints, numbers, return true if it is possible to split the array so that the sum of the left half is equal to the sum of the right half.
 	 	* The input array must meet the following specifications, otherwise you should return false.
 		*/
+
+		/*
+ 	  * Exercise 10
+ 	 	* Given an array of Strings, values, return the number of clumps in the array. A clump is defined as a consecutive series of two or more identical values.
+ 	 	* The input array must meet the following specifications, otherwise you should return -1. Use strict equality when making your comparisons.
+ 		*/
+
 }
