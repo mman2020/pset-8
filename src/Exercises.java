@@ -79,4 +79,23 @@ public class Exercises {
  	 * Given an array of ints, numbers, return true if there exists three consecutively increasing numbers somewhere in the array.
  	 * The input array must meet the following speciications, otherwise you should return false.
  	 */
+
+	/*
+	 * Exercise 7
+	 * Given an array of ints, values, and a target int, x, return true if x is everywhere in the array.
+	 * A target is defined as being everywhere if it is located adjacent to every other element.
+	 * The input array and target must meet the following specifications, otherwise you should return false. Use strict equality when making your comparisons.
+	 */
+
+	 /*
+ 	  * Exercise 8
+  	* Given an array of ints, numbers, return true if the array contains three consecutive even or three consecutive odd numbers.
+  	* The input array must meet the following specifications, otherwise you should return false.
+ 	  */
+
+	 /*
+	  * Exercise 9
+	 	* Given an array of ints, numbers, return true if it is possible to split the array so that the sum of the left half is equal to the sum of the right half.
+	 	* The input array must meet the following specifications, otherwise you should return false.
+		*/
 }
