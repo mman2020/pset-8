@@ -89,6 +89,21 @@ public class Exercises {
  	 * Given an array of Strings, words, return a new array comprised of the middle three elements of the original array.
  	 * The input array must meet the following specifications, otherwise you should return an empty array.
 	 */
+	 
+	 public String[] middle(String[] words) {
+	 	String[] empty = new String[0];
+	 		for(int i = 0; i < words.length; i ++) {
+		 		boolean containsNull = false;
+		 		containsNull = (words[i] == null) ? true : false;
+		 		if(containsNull) {
+			 		return empty;
+		 		}
+	 		}
+	 		if(words == null) {
+		 		return empty;
+	 		} else if (words.length < 3 || words.length % 2 == 0) {
+		 		return empty;
+	 }
 
   /*
 	 * Exercise 6
