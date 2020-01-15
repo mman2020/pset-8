@@ -143,7 +143,7 @@ public class Exercises {
 	 * A target is defined as being everywhere if it is located adjacent to every other element.
 	 * The input array and target must meet the following specifications, otherwise you should return false. Use strict equality when making your comparisons.
 	 */
-	 
+
 	 public boolean everywhere(int values[], int x) {
  		if(values == null) {
  			return false;
@@ -167,6 +167,7 @@ public class Exercises {
   	* Given an array of ints, numbers, return true if the array contains three consecutive even or three consecutive odd numbers.
   	* The input array must meet the following specifications, otherwise you should return false.
  	  */
+
 
 	 /*
 	  * Exercise 9
