@@ -62,4 +62,21 @@ public class Exercises {
 		}
 		return maximum - mininum;
 	}
+  /*
+	 * Exercise 4
+	 * Given an array of doubles, numbers, return the largest value among the first, middle, and last elements in the array.
+	 * The input array must meet the following specifications, otherwise you should return undefined.
+	 */
+
+  /*
+	 * Exercise 5
+ 	 * Given an array of Strings, words, return a new array comprised of the middle three elements of the original array.
+ 	 * The input array must meet the following specifications, otherwise you should return an empty array.
+	 */
+
+  /*
+	 * Exercise 6
+ 	 * Given an array of ints, numbers, return true if there exists three consecutively increasing numbers somewhere in the array.
+ 	 * The input array must meet the following speciications, otherwise you should return false.
+ 	 */
 }
