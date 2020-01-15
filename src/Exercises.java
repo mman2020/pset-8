@@ -168,6 +168,22 @@ public class Exercises {
   	* The input array must meet the following specifications, otherwise you should return false.
  	  */
 
+		public boolean consecutive(int numbers[]) {
+			if(numbers == null) {
+				return false;
+			} else if (numbers.length < 3) {
+				return false;
+			}
+			for(int i = 0; i < numbers.length - 3; i ++) {
+				if(numbers[i] % 2 == 0 && numbers[i + 1] % 2 == 0 && numbers[i + 2] % 2 == 0) {
+					return true;
+				}
+				if(numbers[i] % 2 == 1 && numbers[i + 1] % 2 == 1 && numbers[i + 2] % 2 == 1) {
+					return true;
+				}
+			}
+			return false;
+		}
 
 	 /*
 	  * Exercise 9
