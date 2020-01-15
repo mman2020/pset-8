@@ -143,6 +143,24 @@ public class Exercises {
 	 * A target is defined as being everywhere if it is located adjacent to every other element.
 	 * The input array and target must meet the following specifications, otherwise you should return false. Use strict equality when making your comparisons.
 	 */
+	 
+	 public boolean everywhere(int values[], int x) {
+ 		if(values == null) {
+ 			return false;
+ 		} else if (values.length < 1) {
+ 			return false;
+ 		}
+ 		for(int i = 1; i < values.length - 1; i ++) {
+ 			if(values[i] != x) {
+ 				if(values [i - 1] != x) {
+ 					return false;
+ 				} else if(values [i + 1] != x) {
+ 					return false;
+ 				}
+ 			}
+ 		}
+ 		return true;
+ 	}
 
 	 /*
  	  * Exercise 8
