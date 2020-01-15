@@ -112,13 +112,30 @@ public class Exercises {
 	 	returnArray[0] = middle;
 	 	returnArray[0] = last;
 	 	return returnArray;
- }
- 
+ 	}
+
   /*
 	 * Exercise 6
  	 * Given an array of ints, numbers, return true if there exists three consecutively increasing numbers somewhere in the array.
  	 * The input array must meet the following speciications, otherwise you should return false.
  	 */
+
+	 public boolean increasing(int numbers[] ) {
+ 		if(numbers == null) {
+ 			return false;
+ 		} else if (numbers.length < 1) {
+ 			return false;
+ 		}
+ 		for(int i = 0; i < numbers.length - 3; i++) {
+ 			double first = numbers[i];
+ 			double middle = numbers[i + 1];
+ 			double last = numbers[i + 2];
+ 			if(first > middle && middle > last) {
+ 				return true;
+ 			}
+ 		}
+ 		return false;
+ 	}
 
 	/*
 	 * Exercise 7
