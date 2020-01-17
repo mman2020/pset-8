@@ -191,6 +191,28 @@ public class Exercises {
 	 	* The input array must meet the following specifications, otherwise you should return false.
 		*/
 
+		public boolean balance(int numbers[]) {
+			if(numbers == null) {
+				return false;
+			} else if (numbers.length < 2) {
+				return false;
+			}
+			for(int i = 0; i < numbers.length; i ++) {
+				int sumLeft = 0;
+				int sumRight = 0;
+				for(int j = 0; j < i; i ++) {
+					sumLeft += numbers[j];
+				}
+				for(int j = i; j < numbers.length; j ++) {
+					sumRight += numbers[j];
+				}
+				if(sumLeft == sumRight) {
+					return true;
+				}
+			}
+			return false;
+		}
+
 		/*
  	  * Exercise 10
  	 	* Given an array of Strings, values, return the number of clumps in the array. A clump is defined as a consecutive series of two or more identical values.
