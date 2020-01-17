@@ -218,5 +218,26 @@ public class Exercises {
  	 	* Given an array of Strings, values, return the number of clumps in the array. A clump is defined as a consecutive series of two or more identical values.
  	 	* The input array must meet the following specifications, otherwise you should return -1. Use strict equality when making your comparisons.
  		*/
-
+		
+		public int clumps(String values[]) {
+			if(values == null) {
+				return -1;
+			} else if(values.length < 2) {
+				return -1;
+			}
+			int clumpNum = 0;
+			for(int i = 0; i < values.length; i ++) {
+				boolean containsNull = false;
+				containsNull = (values[i] == null) ? true : false;
+				if(containsNull) {
+					return -1;
+				}
+			}
+			for(int i = 0; i < values.length - 1; i ++) {
+				if(values[i].equals(values[i + 1])) {
+					clumpNum ++;
+				}
+			}
+			return clumpNum;
+		}
 }
